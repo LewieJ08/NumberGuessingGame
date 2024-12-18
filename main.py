@@ -24,12 +24,12 @@ def difficultyLevel():
             choice = int(input("Select a difficulty [1,2,3]\n> "))
         except ValueError:
             print("Invalid Input")
-            if choice == 1:
-                return 10
-            elif choice == 2:
-                return 5
-            elif choice == 3:
-                return 3 
+        if choice == 1:
+            return 10
+        elif choice == 2:
+            return 5
+        elif choice == 3:
+            return 3 
         
 
         

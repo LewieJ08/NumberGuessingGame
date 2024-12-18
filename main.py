@@ -20,16 +20,17 @@ def difficultyLevel():
 3. Hard - 3 Chances
               """)
     while True:
-        choice = int(input("Select a difficulty [1,2,3]\n> "))
         try:
+            choice = int(input("Select a difficulty [1,2,3]\n> "))
+        except ValueError:
+            print("Invalid Input")
             if choice == 1:
                 return 10
             elif choice == 2:
                 return 5
             elif choice == 3:
                 return 3 
-        except ValueError:
-            print("Invalid Input")
+        
 
         
 def game():
